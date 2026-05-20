@@ -1,32 +1,30 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./style.css";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
-
+import Heroimg1 from "../../assets/0_ARCVgw1aDJ0vWXKM.jpg";
+import Heroimg2 from "../../assets/Web Developer.jpg";
+import Heroimg3 from "../../assets/What-Does.jpg";
 export default function Hero() {
   const slides = [
     {
       id: 1,
-      image:
-        "https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=2000",
+      image: Heroimg1,
     },
     {
       id: 2,
-      image:
-        "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2000",
+      image: Heroimg2,
     },
     {
       id: 3,
-      image:
-        "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2000",
+      image: Heroimg3,
     },
   ];
 
   return (
-    <section className="hero-container w-full h-[500px] md:h-[600px] relative">
+    <section className="hero-container w-full h-125 md:h-150 relative">
       <Swiper
         pagination={{
           dynamicBullets: true,
