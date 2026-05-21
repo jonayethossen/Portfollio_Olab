@@ -9,22 +9,28 @@ export default function PersonalInformation() {
   ];
 
   const infoRight = [
-    { label: "Website", value: "https://luthfunnaher.com/", isLink: true },
     {
-      label: "Linkedin",
-      value: "https://www.linkedin.com/luthfunnaher",
+      label: "Website",
+      value: "https://github.com/jonayethossen",
       isLink: true,
     },
-    { label: "GitHub", value: "https://github.com/com/", isLink: true },
+    {
+      label: "Linkedin",
+      value: "https://www.linkedin.com/jonayethossen",
+      isLink: true,
+    },
+    {
+      label: "GitHub",
+      value: "https://github.com/jonayethossen",
+      isLink: true,
+    },
     { label: "Freelance", value: "https://www.fiverr.com/", isLink: true },
   ];
 
   return (
     <section className="bg-[#f9f9f9] py-20">
       <Container>
-        {/* মেইন সাদা কার্ড কন্টেইনার */}
         <div className="max-w-5xl mx-auto bg-white p-6 md:p-12 rounded-2xl shadow-md border border-gray-100">
-          {/* হেডিং সেকশন */}
           <div className="text-center mb-10">
             <h2 className="text-4xl font-bold text-gray-800 mb-6 tracking-tight">
               Personal Information
@@ -32,12 +38,9 @@ export default function PersonalInformation() {
             <hr className="border-gray-200" />
           </div>
 
-          {/* ২-কলামের ইনফরমেশন গ্রিড লেআউট */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-0 mt-8 relative">
-            {/* ডেক্সটপ স্ক্রিনের জন্য মাঝখানের ভার্টিকাল ডিভাইডার লাইন */}
             <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-gray-200 -translate-x-1/2"></div>
 
-            {/* বাম পাশের কলাম */}
             <div className="divide-y divide-gray-200/80">
               {infoLeft.map((item, index) => (
                 <div
@@ -54,14 +57,13 @@ export default function PersonalInformation() {
               ))}
             </div>
 
-            {/* ডান পাশের কলাম */}
             <div className="divide-y divide-gray-200/80 md:pl-4">
               {infoRight.map((item, index) => (
                 <div
                   key={index}
                   className="py-3.5 flex items-center text-base md:text-lg"
                 >
-                  <span className="font-bold text-gray-800 min-w-[110px] block">
+                  <span className="font-bold text-gray-800 min-w-27.5 block">
                     {item.label}:
                   </span>
                   <a
