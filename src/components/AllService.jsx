@@ -1,7 +1,4 @@
-import React from "react";
-import Container from "./Container"; // আপনার প্রোজেক্টের Container কম্পোনেন্ট
-
-// আপনার এসেট ফোল্ডার থেকে সার্ভিসের ডেমো ইমেজটি ইমপোর্ট করুন
+import Container from "./Container";
 import apiImg from "../assets/API Development.jpg";
 import fullStackImg from "../assets/Full-Stack Web Development.jpg";
 import responsiveImg from "../assets/Responsive Web Design.jpg";
